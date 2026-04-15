@@ -1,0 +1,81 @@
+.navbar-booking {
+    background: white;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav-container-booking {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo-booking {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 32px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #006ce4;
+}
+
+.nav-tabs-booking {
+    display: flex;
+    gap: 12px;
+    background: #f7f9fb;
+    padding: 4px;
+    border-radius: 48px;
+}
+
+.nav-tab-booking {
+    padding: 10px 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 40px;
+    transition: all 0.2s;
+    color: #5e6f8d;
+}
+
+.nav-tab-booking:hover {
+    color: #006ce4;
+}
+
+.nav-tab-booking.active {
+    background: #006ce4;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 108, 228, 0.3);
+}
+
+@media (max-width: 768px) {
+    .nav-container-booking {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .nav-tabs-booking {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .nav-tab-booking {
+        flex: 1;
+        text-align: center;
+    }
+}
